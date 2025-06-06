@@ -27,5 +27,5 @@ test('checkoutComplete', async({page}) => {
     const cc = new completeCheckout(page)
     await lg.loginUsingUsernameAndPassword('standard_user', 'secret_sauce')
     await pm.addToCartMultipleItems(page)
-    await cc.completeCheckout('Daniel')
+    await cc.completeCheckout('Daniel', 'Mustafa', 61266)
 })
